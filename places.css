@@ -1,0 +1,134 @@
+/* Importing the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap');
+
+/* Setting default styles for all elements */
+*{
+    font-family: 'Poppins', sans-serif; /* Setting the font family */
+    margin:0; /* Removing default margins */
+    padding:0; /* Removing default padding */
+    box-sizing: border-box; /* Including padding and border in element's total width and height */
+    outline: none; /* Removing default outline */
+    border:none; /* Removing default borders */
+    text-decoration: none; /* Removing default text decorations */
+    text-transform: capitalize; /* Capitalizing texts */
+    transition: .2s linear; /* Adding a default transition effect */
+}
+
+/* Setting styles for the html element */
+html {
+    font-size: 62.5%; /* Setting the base font size for easy rem calculation */
+    overflow-x: hidden; /* Preventing horizontal scrolling */
+    scroll-behavior: smooth; /* Making scrolling smooth */
+    scroll-padding-top: 5rem; /* Adding padding to the scrollable area */
+}
+
+/* Setting styles for sections */
+section{
+    padding:5rem 9%; /* Adding padding */
+}
+
+/* Setting styles for buttons */
+.btn{
+  margin-top: 1rem; /* Adding top margin */
+  display: inline-block; /* Making the button inline-block */
+  border:0.2rem solid black; /* Adding border */
+  color:black; /* Setting text color */
+  cursor:pointer; /* Changing cursor to pointer on hover */
+  background:none; /* Removing default background */
+  font-size:1.7rem; /* Setting font size */
+  padding:1rem 3rem; /* Adding padding */
+}
+
+/* Changing button styles on hover */
+.btn:hover{
+  background: black; /* Changing background color */
+  color: white; /* Changing text color */
+}
+
+/* Setting styles for the packages class */
+.packages {
+  background: #eee; /* Setting background color */
+}
+
+/* Setting styles for the box container inside packages */
+.packages .box-container {
+  display: -ms-grid; /* Setting display to grid for IE */
+  display: grid; /* Setting display to grid */
+  -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit]; /* Setting grid columns for IE */
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr)); /* Setting grid columns */
+  gap: 1.5rem; /* Setting gap between grid items */
+}
+
+/* Setting styles for the box inside the box container */
+.packages .box-container .box {
+  text-align: center; /* Centering text */
+  background: #fff; /* Setting background color */
+  border: 0.2rem solid #10221b; /* Adding border */
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Adding shadow for Webkit browsers */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Adding shadow */
+  border-radius: .5rem; /* Adding border radius */
+}
+
+/* Changing box styles on hover */
+.packages .box-container .box:hover {
+  background: #10221b; /* Changing background color */
+}
+
+/* Changing content styles inside box on box hover */
+.packages .box-container .box:hover .content > * {
+  color: #fff; /* Changing text color */
+}
+
+/* Changing button styles inside box on box hover */
+.packages .box-container .box:hover .btn {
+  border-color: #fff; /* Changing border color */
+}
+
+/* Changing button styles on hover inside box on box hover */
+.packages .box-container .box:hover .btn:hover {
+  background: #fff; /* Changing background color */
+  color: #10221b; /* Changing text color */
+}
+
+/* Setting styles for the image inside the box */
+.packages .box-container .box .image {
+  height: 25rem; /* Setting height */
+  overflow: hidden; /* Hiding overflow */
+  padding: 2rem; /* Adding padding */
+  padding-bottom: 0; /* Removing bottom padding */
+  border-radius: .5rem; /* Adding border radius */
+}
+
+/* Setting styles for the img inside the image */
+.packages .box-container .box .image img {
+  height: 100%; /* Setting height to fill the container */
+  width: 100%; /* Setting width to fill the container */
+  -o-object-fit: cover; /* Making the image cover the container for Opera */
+  object-fit: cover; /* Making the image cover the container */
+  border-radius: .5rem; /* Adding border radius */
+}
+
+/* Setting styles for the content inside the box */
+.packages .box-container .box .content {
+  padding: 2rem; /* Adding padding */
+}
+
+/* Setting styles for h3 inside the content */
+.packages .box-container .box .content h3 {
+  font-size: 2rem; /* Setting font size */
+  color: #10221b; /* Setting text color */
+}
+
+/* Setting styles for p inside the content */
+.packages .box-container .box .content p {
+  font-size: 1.5rem; /* Setting font size */
+  color: #10221b; /* Setting text color */
+  padding: 1rem 0; /* Adding padding */
+  line-height: 2; /* Setting line height */
+}
+
+/* Setting styles for the price inside the content */
+.packages .box-container .box .content .price {
+  font-size: 2rem; /* Setting font size */
+  color: #219150; /* Setting text color */
+}
